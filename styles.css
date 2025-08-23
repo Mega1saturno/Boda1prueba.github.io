@@ -32,12 +32,12 @@ body {
     font-size: 1.1em;
 }
 
-.blessing h2 {
+.blessing-text h2 {
     color: #8b7355;
     margin-bottom: 15px;
 }
 
-.blessing h3 {
+.blessing-text h3 {
     color: #a9927b;
     margin: 20px 0;
     font-weight: 400;
@@ -451,155 +451,6 @@ body {
     max-width: 600px;
     margin: 20px auto;
     overflow: hidden;
-    background-color: #2c3e50;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.carousel-slider-new {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 300%;
-}
-
-.carousel-slider-new img {
-    width: 50%;
-    height: 200px;
-    display: block;
-    object-fit: cover;
-}
-
-.prev-new, .next-new {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.5);
-    color: #fff;
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.3s ease;
-    border-radius: 50%;
-    border: none;
-    user-select: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.8;
-}
-
-.next-new {
-    right: 10px;
-}
-
-.prev-new {
-    left: 10px;
-}
-
-.prev-new:hover, .next-new:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-    opacity: 1;
-}
-
-.carousel-dots-new {
-    position: absolute;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 8px;
-}
-
-.dot-new {
-    height: 12px;
-    width: 12px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    display: inline-block;
-    cursor: pointer;
-    transition: background-color 0.6s ease;
-}
-
-.dot-new.active {
-    background-color: white;
-}
-
-@media (max-width: 768px) {
-    .carousel-slider-new img {
-        height: 150px;
-    }
-}
-/* ===== RESPONSIVE GENERAL ===== */
-@media (max-width: 600px) {
-    .card {
-        margin: 10px;
-        padding: 20px;
-    }
-
-    .wedding-title {
-        font-size: 2.2rem;
-        padding-bottom: 10px;
-    }
-
-    .timer {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .time-box {
-        width: 45%;
-        padding: 10px;
-    }
-
-    .map-btn, .whatsapp-btn {
-        width: 100%;
-        padding: 12px;
-        font-size: 0.9em;
-    }
-
-    .parents, .accounts {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .prayer-text {
-        font-size: 1rem;
-        padding: 10px;
-    }
-}
-
-/* Optimización para tablets */
-@media (min-width: 601px) and (max-width: 1024px) {
-    .card {
-        max-width: 90%;
-    }
-    
-    .details-grid {
-        gap: 15px;
-    }
-}
-
-/* Mejora de contraste para accesibilidad */
-body {
-    color: #4a423b;
-}
-
-h1, h2, h3, h4 {
-    line-height: 1.3;
-}
-
-/* Optimizar botones para touch */
-button {
-    min-height: 44px; /* Tamaño mínimo para touch */
-}
-/* Carrusel de fotos (nuevo estilo - dos imágenes por vista) */
-.carousel-container-new {
-    position: relative;
-    max-width: 600px;
-    margin: 20px auto;
-    overflow: hidden;
     background-color: #f5f0eb;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -768,8 +619,61 @@ button {
     font-style: italic;
     color: #7a6b5d;
 }
-/* Add to styles.css */
-.main-image-frame:hover .main-image {
-    transform: scale(1.1);
-    transition: transform 0.5s ease-in-out;
+
+
+.galeria-boda-simple {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.galeria-boda-simple img {
+    width: 30%;
+    height: auto;
+}
+
+
+/* Estilo para el efecto de zoom en la imagen principal */
+.main-image {
+    transition: transform 0.9s ease; /* Aplica una transición suave */
+}
+
+.main-image:hover {
+    transform: scale(1.3); /* Agranda la imagen un 10% */
+}
+
+/* Agrega este código para animar las imágenes de los eventos */
+.ceremonia-img {
+    width: 50px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    transition: transform 0.3s ease-in-out; /* Habilita una transición suave */
+}
+
+.ceremony:hover .ceremonia-img {
+    transform: translateY(-10px); /* Mueve la imagen 10px hacia arriba */
+}
+
+.reception:hover .ceremonia-img {
+    transform: translateY(-10px); /* Mueve la imagen 10px hacia arriba */
+}
+/* Estilo para el efecto de zoom en la imagen principal */
+.main-image {
+    transition: transform 0.9s ease; /* Aplica una transición suave */
+}
+
+.main-image:hover {
+    transform: scale(1.3); /* Agranda la imagen un 10% */
+}
+/* animacion de iconos*/
+.detail-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out; /* Habilita una transición suave para la animación */
+}
+
+.detail-column:hover .detail-icon {
+    transform: translateX(10px); /* Mueve la imagen 10px a la derecha */
 }

@@ -1,0 +1,51 @@
+/* Nuevo estilo para la página de inicio */
+.landing-page-body {
+    background: #fdfdfd; /* Un fondo muy claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.landing-card {
+    max-width: 450px;
+    width: 90%;
+    text-align: center;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.landing-image {
+    width: 100%;
+    display: block;
+}
+
+.landing-text-container {
+    padding: 20px;
+    background: #fff;
+}
+
+.landing-text {
+    font-size: 1.2em;
+    color: #5a4d41;
+    margin-bottom: 10px;
+}
+
+.landing-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #c5a47c;
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.landing-btn:hover {
+    background: #a98d69;
+}
