@@ -677,3 +677,142 @@ body {
 .detail-column:hover .detail-icon {
     transform: translateX(10px); /* Mueve la imagen 10px a la derecha */
 }
+
+
+
+
+
+/* carrusel*/
+/* Estilos generales para la sección del carrusel */
+.carrusel-boda-bootstrap {
+    padding: 20px; /* Ajusta el padding si es necesario para el espaciado dentro de la tarjeta */
+    max-width: 800px; /* Limita el ancho máximo del carrusel */
+    margin: 20px auto; /* Centra el carrusel en la página */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para que parezca parte de las tarjetas existentes */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: var(--color-claro); /* Fondo similar a tus tarjetas */
+}
+
+/* Ajustes para las imágenes dentro del carrusel */
+.carousel-item img {
+    max-height: 450px; /* Limita la altura de las imágenes para que no sean demasiado grandes */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    border-radius: 8px; /* Bordes ligeramente redondeados para las imágenes */
+}
+
+/* Estilos para el texto superpuesto (caption) */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente para mayor legibilidad */
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Pequeño margen desde la parte inferior */
+}
+
+.carousel-caption h5 {
+    color: #fff;
+    font-family: 'Playfair Display', serif; /* O la fuente que uses para tus títulos */
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+.carousel-caption p {
+    color: #f8f9fa; /* Color de texto más claro */
+    font-family: 'Roboto', sans-serif; /* O la fuente que uses para tus textos */
+    font-size: 1.1em;
+}
+
+/* Ajustes para los indicadores del carrusel (los puntos de abajo) */
+.carousel-indicators li {
+    background-color: rgba(255, 255, 255, 0.5); /* Puntos menos intrusivos */
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.carousel-indicators .active {
+    background-color: var(--color-oscuro); /* Punto activo con color de tu paleta */
+}
+
+/* Ajustes para las flechas de navegación */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%); /* Hace las flechas blancas para que se vean mejor sobre fondos oscuros */
+}
+/* Ajustes para el carrusel */
+.carrusel-boda-bootstrap {
+    max-width: 600px; /* Ancho máximo igual al de tus tarjetas */
+    margin-left: auto;
+    margin-right: auto;
+}
+.carousel-inner .carousel-item img {
+    max-width: 80%; /* Ajusta el ancho máximo de la imagen al 80% del contenedor */
+    max-height: 450px; /* Limita la altura máxima de las imágenes */
+    object-fit: contain; /* Asegura que la imagen se ajuste sin ser recortada */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+/* botones de whatsapp para los novios*/
+.botones-whatsapp {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espacio entre los botones */
+    flex-wrap: wrap; /* Permite que los botones salten de línea en pantallas pequeñas */
+}
+
+/* Ajustes para el texto y el fondo del carrusel */
+
+
+.carousel-caption {
+    padding-bottom: 5px; /* Reduce el espacio inferior de la leyenda */
+    background-color: rgba(0, 0, 0, 0.0); /* Hace el fondo más oscuro para mejorar la lectura */
+    left: 0; /* Asegura que la leyenda ocupe todo el ancho */
+    right: 0; /* Asegura que la leyenda ocupe todo el ancho */
+    width: 50%; /* Asegura que la leyenda ocupe todo el ancho disponible */
+    bottom: 0; /* Coloca la leyenda en la parte inferior */
+}
+
+.carousel-caption h5 {
+    font-size: 1.2rem; /* Reduce el tamaño de la fuente del título */
+    margin-bottom: 5px; /* Reduce el margen inferior del título */
+}
+
+.carousel-caption p {
+    font-size: 0.9rem; /* Reduce el tamaño de la fuente de la descripción */
+    margin-bottom: 5px; /* Reduce el margen inferior de la descripción */
+}
+/* Corrección de centrado y ancho de la leyenda del carrusel */
+.carousel-caption {
+    left: 50% !important; /* Mueve el inicio de la leyenda al centro */
+    transform: translateX(-50%) !important; /* Ajusta la posición para centrarla horizontalmente */
+    width: calc(100% - 20px) !important; /* Ajusta el ancho para que coincida con el contenedor, restando un pequeño margen */
+    max-width: 580px; /* Opcional: Establece un ancho máximo para que no se extienda demasiado en pantallas grandes */
+}
+
+/* Asegura que los indicadores también estén centrados si es necesario */
+.carousel-indicators {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    margin-left: 0 !important; /* Anula el margen izquierdo predeterminado de Bootstrap */
+    margin-right: 0 !important; /* Anula el margen derecho predeterminado de Bootstrap */
+    bottom: 10px; /* Ajusta la distancia desde la parte inferior si lo ves muy pegado */
+}
+
+/* Opcional: Ajusta el tamaño de los iconos de navegación si son muy grandes */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 30px; /* Ancho del icono */
+    height: 30px; /* Alto del icono */
+    background-size: 100%, 100%; /* Asegura que el icono ocupe el espacio */
+}
+
+/* Opcional: Ajusta el color de los iconos de navegación */
+.carousel-control-prev,
+.carousel-control-next {
+    color: #fff; /* Color de las flechas (ej. blanco) */
+    opacity: 0.8; /* Opacidad de las flechas */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1; /* Opacidad al pasar el ratón */
+}
+
+
+

@@ -6,6 +6,10 @@
     <title>Boda Erick & Dulce</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">   
+
+
+
     <meta name="theme-color" content="#8b7355">
     <meta name="description" content="Invitación a la boda de Erick y Dulce">
 </head>
@@ -47,17 +51,93 @@
 
 </section>
 
+<section class="card carrusel-boda-bootstrap">
  <section class="card">
    <section class="blessing-text">
     <h2>¡LA FELICIDAD SE COMPLETA!</h2>
 </section>
-<section class="card">
-    <div class="galeria-boda-simple">
-        <img src="Img/img2.jpg" alt="Imagen 1">
-        <img src="Img/img3.jpg" alt="Imagen 2">
-        <img src="Img/img4.jpg" alt="Imagen 3">
+
+<div id="carouselBoda" class="carousel slide" data-ride="carousel" data-interval="5000">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselBoda" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselBoda" data-slide-to="1"></li>
+            <li data-target="#carouselBoda" data-slide-to="2"></li>
+            <li data-target="#carouselBoda" data-slide-to="3"></li>
+            <li data-target="#carouselBoda" data-slide-to="4"></li>
+            <li data-target="#carouselBoda" data-slide-to="5"></li>
+            <li data-target="#carouselBoda" data-slide-to="6"></li>
+            <li data-target="#carouselBoda" data-slide-to="7"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="Img/img1.jpg" alt="Erick y Dulce 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Nuestra historia</h5>
+                    <p>Unidos por el destino.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="Img/img2.jpg" alt="Erick y Dulce 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Momentos especiales</h5>
+                    <p>Cada recuerdo, un tesoro.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="Img/img3.jpg" alt="Erick y Dulce 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>El comienzo de algo hermoso</h5>
+                    <p>Amor que florece.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="Img/img4.jpg" alt="Erick y Dulce 4">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Nuestra promesa</h5>
+                    <p>Juntos para siempre.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="Img/img5.jpg" alt="Erick y Dulce 5">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Caminando de la mano</h5>
+                    <p>Cada paso, una aventura.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="Img/img6.jpg" alt="Erick y Dulce 6">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>El día soñado</h5>
+                    <p>Compartiendo nuestra felicidad.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="Img/img7.jpg" alt="Erick y Dulce 7">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Un futuro juntos</h5>
+                    <p>Con amor, todo es posible.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="Img/img8.jpg" alt="Erick y Dulce 8">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Nuestros mejores momentos</h5>
+                    <p>Recordando el camino recorrido.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselBoda" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselBoda" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
     </div>
-</section>
+
+ </section>
+
 
  <div class="parents"></div>
  <h3>CON LA BENDICIÓN DE NUESTROS PADRES</h3>
@@ -65,16 +145,16 @@
         
             <div>
                 <h4>Madre del Novio</h4>
-                <p>Anabella Estrada<br></p>
+                <p>Anabella Estrada Gálvez<br></p>
             </div>
             <div>
                 <h4>Padres de la Novia</h4>
-                <p>Tomas Ventura ✟<br>Blanca de Ventura</p>
+                <p>Blanca Luz González Espinoza <br>Tomás Ventura Paniagua ✟</p>
             </div>
         </div>
         
         <div class="padrinos">
-            <h4>Padrinos de Honor</h4>
+            <h4>Nuestros Padrinos</h4>
             <p>Jose Antonio Pirir<br>Karla Montanico</p>
         </div>
          &nbsp; 
@@ -100,7 +180,8 @@
 
        <img src="Img/ceremonia.png" alt="ceremonia" class="ceremonia-img">
         <h4>Ceremonia Civil</h4>
-        <p>Hora: 6:00PM<br>Parque de la Paz<br>Zona 5 Ciudad Capital</p>
+        <p>Fecha: 15 Nov. 2025<br>
+        <p>Hora: 6:00PM<br>Condominio Rosario<br>Zona 7 de Mixco</p>
         <button class="map-btn" 
                 data-google="http://maps.google.com/maps?q=Parque+de+la+Paz+Zona+5+Ciudad+Capital"
                 data-waze="https://www.waze.com/en/live-map/directions/gt/guatemala/guate/parque-de-la-paz-zona-5-ciudad-capital">
@@ -113,7 +194,8 @@
     <div class="ceremony">
         <img src="Img/iglesia.png" alt="ceremonia" class="ceremonia-img">
         <h4>Ceremonia Religiosa</h4>
-        <p>Hora: 4:00PM<br>Parroquia San Carlos Borromeo<br>Zona 12 ciudad Capital</p>
+        <p>Fecha: 15 Nov. 2025<br>
+        <p>Hora: 16:00PM<br>Parroquia San Carlos Borromeo<br>Zona 12 ciudad Capital</p>
         <button class="map-btn" 
                 data-google="https://maps.app.goo.gl/gop34yFnu8z2q9aNA"
                 data-waze="https://www.waze.com/en/live-map/directions/gt/guatemala/guate/parroquia-san-carlos-borromeo?place=ChIJ2ZMuptegiYURLP94QZ5jauY">
@@ -126,7 +208,8 @@
     <div class="reception">
         <img src="Img/recepcion.png" alt="ceremonia" class="ceremonia-img">
         <h4>Recepción</h4>
-        <p>Hora: 8:00PM<br>Hotel las Americas<br>Ciudad Capital</p>
+        <p>Fecha: 15 Nov. 2025<br>
+        <p>Hora: 19:30PM<br>Hotel las Americas<br>Ciudad Capital</p>
         <button class="map-btn" 
                 data-google="https://maps.app.goo.gl/k19HEtM6stV6vB1A6"
                 data-waze="https://www.waze.com/en/live-map/directions/gt/guatemala/guate/hotel-las-americas?place=ChIJJTJDT-GjiYURJdFcCKHt_uE">
@@ -152,10 +235,18 @@
 </div>
      
 <div>  
- <p>Para facilitar el traslado entre la Iglesia y lugar de recepción, pondremos a vuestra disposición el siguiente servicio de autobús este servicio sera unicamente en fecha 15 de Noviembre del 2025</p>
-<p>Ubicacion del Bus</p>
-<p>Parque de Mixco</p> 
-<p>Horario: 16:00</p>
+ <p>Para facilitar el traslado entre la Iglesia y lugar de recepción, pondremos a disposición el siguiente servicio de autobús este servicio sera unicamente en fecha 15 de Noviembre del 2025</p>
+
+
+<p class="section-description">
+    Punto de encuentro: Parque de Mixco.
+    <p>Hora: 14:00 PM</p>
+    </p>
+    <p class="section-description">
+    Salida del parque de Mixco hacia la Iglesia.
+    <p>Hora: 14:30 PM</p>
+</p>
+
     <img src="Img/busalt.png" alt="ceremonia" class="ceremonia-img">
 
 </div>
@@ -197,16 +288,26 @@
         <h2>CONFIRMA TU ASISTENCIA</h2>
         <p class="invite-text">Tu presencia es importante para nosotros, por favor confirmanos tu asistencia por WhatsApp hasta el 29 de Octubre del 2025</p>
       
-        <button class="whatsapp-btn" id="magicConfirmBtn">
-            <i class="fab fa-whatsapp"></i> CONFIRMAR ASISTENCIA
-        </button>
+        
+        
+         <div class="botones-whatsapp">
+    <button class="whatsapp-btn" id="confirmarNovia">
+        <i class="fab fa-whatsapp"></i> Confirmar con la Novia
+    </button>
+    <button class="whatsapp-btn" id="confirmarNovio">
+        <i class="fab fa-whatsapp"></i> Confirmar con el Novio
+    </button>
+</div>
+ 
+
         
         <div class="footer-text">
             <p>¡A ponerse guapos que nos vamos a casar! Tenemos todo: el traje, el fotógrafo, las flores... Pero nos hace falta lo más importante. ¡Contar con tu presencia en este gran día!</p>
             <p class="closing">¡Te Esperamos!</p>
         </div>
-    
 
+
+    
 
 
 
@@ -237,8 +338,28 @@
             </div>
         </div>
     </section>
+
+
+
+   
+
+
+
+
+
+
+
+
     
     
     <script src="script.js"></script>
+    
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
 </body>
 </html>

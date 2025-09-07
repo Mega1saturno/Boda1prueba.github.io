@@ -7,7 +7,7 @@ if (window.location.href.includes('index.html') && !window.location.href.include
 // El resto de tu código existente puede permanecer igual
 // -----------------------------------------------------------------
 // Cuenta regresiva
-const countDownDate = new Date("NOV 15, 2025 00:00:00").getTime();
+const countDownDate = new Date("Nov 15, 2025 00:00:00").getTime();
 
 const updateTimer = () => {
     const now = new Date().getTime();
@@ -23,13 +23,21 @@ setInterval(updateTimer, 1000);
 
 // -----------------------------------------------------------------
 // Acción para el botón de confirmación por WhatsApp
-document.getElementById("magicConfirmBtn").addEventListener("click", function () {
-    const mensaje = "¡Buenas tardes! Erick y Dulce, confirmo mi asistencia a su boda. ¡Es un honor poder acompañarlos en este día tan especial! ❤️";
-    const numero = "50236611165";
+// Funcionalidad para el botón de confirmar con la Novia
+document.getElementById("confirmarNovia").addEventListener("click", function () {
+    const mensaje = "¡Hola Dulce! Confirmo mi asistencia a la boda. ¡Es un honor poder acompañarlos en este día tan especial! ❤️";
+    const numero = "50259868962"; // Reemplaza con el número de la novia
     const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
     window.open(url, '_blank');
 });
 
+// Funcionalidad para el botón de confirmar con el Novio
+document.getElementById("confirmarNovio").addEventListener("click", function () {
+    const mensaje = "¡Hola Erick! Confirmo mi asistencia a la boda. ¡Es un honor poder acompañarlos en este día tan especial! ❤️";
+    const numero = "50241089461"; // Reemplaza con el número del novio
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+    window.open(url, '_blank');
+});
 // -----------------------------------------------------------------
 // Modal para los mapas
 document.querySelectorAll('.map-btn').forEach(button => {
@@ -79,3 +87,8 @@ document.querySelectorAll('.map-option').forEach(link => {
     link.setAttribute('role', 'button');
     link.setAttribute('tabindex', '0');
 });
+
+
+
+// -----------------------------------------------------------------
+// carrusel
