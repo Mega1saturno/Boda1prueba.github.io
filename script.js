@@ -91,4 +91,25 @@ document.querySelectorAll('.map-option').forEach(link => {
 
 
 // -----------------------------------------------------------------
-// carrusel
+// musica
+
+document.addEventListener('DOMContentLoaded', () => {
+    const music = document.getElementById('wedding-music');
+    let isPlaying = false;
+
+    // Función para reproducir la música
+    function playMusic() {
+        if (!isPlaying) {
+            music.play().then(() => {
+                isPlaying = true;
+                console.log("Música iniciada por interacción del usuario.");
+            }).catch(error => {
+                console.log("La reproducción automática de la música ha sido bloqueada. Error:", error);
+            });
+        }
+    }
+
+    // Reproduce la música en la primera interacción del usuario
+    document.body.addEventListener('click', playMusic, { once: true });
+    document.body.addEventListener('touchstart', playMusic, { once: true });
+});
