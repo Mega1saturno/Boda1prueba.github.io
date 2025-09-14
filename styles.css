@@ -815,4 +815,27 @@ body {
 }
 
 
+/* Colores básicos para el texto */
 
+.texto-rojo {
+  color: #5f726d;
+}
+
+.texto-verde {
+  color: #8b7355;
+}
+
+/* Este código para tipo de letra styles.css */
+.fuente-principal {
+  font-family: Arial, sans-serif;
+}
+
+.fuente-secundaria {
+  font-family: 'Times New Roman', serif;
+}
+
+.fuente-elegante {
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-weight: bold;
+}
