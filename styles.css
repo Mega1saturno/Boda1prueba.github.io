@@ -818,7 +818,7 @@ body {
 /* Colores básicos para el texto */
 
 .texto-rojo {
-  color: #188046;
+  color: #8b7355;
 }
 
 .texto-verde {
@@ -838,4 +838,36 @@ body {
   font-family: 'Georgia', serif;
   font-style: italic;
   font-weight: bold;
+}
+
+
+
+
+/* Estilos para el botón */
+.my-button {
+    background-color: #8B7355; /* Un tono de marrón/beige similar al de tu imagen */
+    color: white;             /* Texto blanco */
+    border: none;             /* Sin borde */
+    padding: 10px 20px;       /* Espaciado interno (arriba/abajo, izquierda/derecha) */
+    border-radius: 25px;      /* Bordes redondeados para el efecto de píldora */
+    font-family: Arial, sans-serif; /* Fuente legible */
+    font-size: 13px;          /* Tamaño de la fuente */
+    cursor: pointer;          /* Muestra el puntero al pasar el ratón */
+    display: flex;            /* Para alinear el texto y el icono */
+    align-items: center;      /* Centra verticalmente los elementos */
+    justify-content: center;  /* Centra horizontalmente los elementos */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sutil sombra para darle profundidad */
+    transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+/* Estilos para el icono dentro del botón */
+.my-button .location-icon {
+    margin-left: 8px; /* Espacio a la izquierda del icono para separarlo del texto */
+    font-size: 18px;  /* Ajusta el tamaño del icono si es un emoji */
+    /* Si usas un SVG o un icono de librería, podrías necesitar ajustar el tamaño de otra forma */
+}
+
+/* Efecto al pasar el ratón por encima (opcional) */
+.my-button:hover {
+    background-color: #6a533f; /* Un tono más oscuro al pasar el ratón */
 }
