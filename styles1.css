@@ -49,3 +49,29 @@
 .landing-btn:hover {
     background: #a98d69;
 }
+
+/* Media Query para todos los dispositivos ----------------------------------------------------------------------------*/
+@media (max-width: 1024px) {
+    .landing-page-body {
+        /* Solución para que 100vh funcione mejor en móviles */
+        min-height: 100vh; 
+        height: auto; /* Permite que crezca si el contenido lo requiere */
+        padding: 20px;
+    }
+
+    .landing-card {
+        margin: auto 0; /* Centrado vertical en el espacio disponible */
+    }
+}
+
+/* Media Query para Móviles */
+@media (max-width: 480px) {
+    .landing-text {
+        font-size: 1em;
+    }
+
+    .landing-btn {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+}

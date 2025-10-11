@@ -871,3 +871,129 @@ body {
 .my-button:hover {
     background-color: #6a533f; /* Un tono más oscuro al pasar el ratón */
 }
+
+
+/* Media Query para Tabletas y Móviles Grandes (Hasta 768px)---------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+    /* Ajustes generales */
+    body {
+        padding: 10px;
+    }
+
+    .card {
+        padding: 20px;
+        margin: 10px auto;
+    }
+
+    /* Títulos y Nombres */
+    .wedding-title {
+        font-size: 2.5rem; /* Título más pequeño */
+    }
+
+    .ac-title {
+        font-size: 2.2rem;
+    }
+
+    .names {
+        font-size: 1.2em;
+    }
+
+    /* Sección de Padres y Padrinos */
+    .parents {
+        flex-direction: column; /* Apila verticalmente */
+        gap: 15px;
+    }
+
+    /* Detalles del evento (Ceremonia y Recepción) */
+    .event-details {
+        flex-direction: column; /* Apila verticalmente */
+        gap: 25px;
+        align-items: center;
+    }
+
+    .line {
+        display: none; /* Oculta la línea divisoria vertical */
+    }
+
+    .ceremony, .reception {
+        width: 80%; /* Ancho controlado para cada columna */
+    }
+
+    /* Cuenta Regresiva */
+    .timer {
+        flex-wrap: wrap; /* Permite que las cajas salten de línea */
+        gap: 10px;
+    }
+
+    .time-box {
+        padding: 10px;
+        flex: 1 1 45%; /* Cada caja ocupa casi la mitad del ancho */
+        min-width: 100px;
+    }
+
+    .time-box span:first-child {
+        font-size: 1.5em; /* Tamaño más pequeño para los números */
+    }
+    
+    /* Carrusel */
+    .carousel-item img {
+        max-height: 300px; /* Limita la altura de las imágenes en móviles */
+    }
+}
+
+/* Media Query para Móviles Pequeños (Hasta 480px) */
+@media (max-width: 480px) {
+    
+    /* Reajuste de Títulos */
+    .wedding-title {
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+    }
+
+    .ac-title {
+        font-size: 1.6rem;
+    }
+
+    .ac-message {
+        font-size: 1.1rem;
+    }
+
+    /* Imagen Principal (Óvalo) */
+    .main-image-container {
+        width: 200px; /* Reduce aún más la imagen principal */
+        height: 280px;
+    }
+
+    .leaf-top {
+        width: 100px;
+        top: -10px;
+        left: 100px;
+    }
+
+    .leaf-bottom {
+        width: 100px;
+        bottom: 0px;
+        right: 110px;
+    }
+
+    /* Botones de WhatsApp */
+    .botones-whatsapp {
+        flex-direction: column; /* Apila los botones de WhatsApp */
+    }
+
+    .whatsapp-btn {
+        width: 100%; /* Botones de ancho completo */
+        margin: 5px 0;
+    }
+    
+    /* Detalles (Código de Vestimenta) */
+     .details-grid {
+        /* Asegura que la columna se extienda si no lo hace */
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .detail-column {
+        padding: 10px;
+    }
+}
