@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Cursive', sans-serif;
+    font-family: Arial, sans-serif; /* Usamos una fuente genérica segura como respaldo */
 }
 
 body {
@@ -75,9 +75,16 @@ body {
 .event-details {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start; /* Cambio: Alinea arriba para evitar que el contenido variable afecte el centrado vertical */
     margin: 30px 0;
 }
+
+.ceremony, .reception {
+    flex: 1;
+    padding: 0 10px;
+    position: relative; /* Necesario para posicionar el pseudo-elemento ::after */
+}
+
 
 .line {
     width: 1px;
@@ -182,7 +189,7 @@ body {
     margin-bottom: 15px;
     text-transform: uppercase;
     font-weight: 300;
-    font-family: 'Great Vibes, cursive';
+    font-family: 'Great Vibes', cursive;
 }
 
 .ac-separator {
@@ -933,6 +940,15 @@ body {
         font-size: 2.2rem;
     }
 
+    .ac-message {
+        font-size: 1.2rem;
+    }
+    
+    .titulo-caligrafia {
+        font-size: 3.5rem; /* Ajuste para el título de caligrafía */
+    }
+
+
     .names {
         font-size: 1.2em;
     }
@@ -988,6 +1004,10 @@ body {
         font-size: 1.8rem;
         letter-spacing: 2px;
     }
+    
+    .titulo-caligrafia {
+        font-size: 3rem; 
+    }
 
     .ac-title {
         font-size: 1.6rem;
@@ -996,6 +1016,11 @@ body {
     .ac-message {
         font-size: 1.1rem;
     }
+    
+    .prayer-text {
+        font-size: 1em;
+    }
+
 
     /* Imagen Principal (Óvalo) */
     .main-image-container {
@@ -1084,7 +1109,7 @@ body {
 .reception::after {
     content: "TARIFA DE PARQUEO Q40"; 
     position: absolute;
-    top: 390px; /* MODIFICADO: Aumenta este valor (por ejemplo, a 125px) para que baje y se separe del texto superior */
+    top: 390px; 
     left: calc(73% + 0px);
     transform: translateX(-50%);
     
@@ -1102,12 +1127,22 @@ body {
     z-index: 10;
 }
 
-/* Ajuste para móviles, si la notificación se superpone en pantallas pequeñas */
+/* Ajuste para móviles */
 @media (max-width: 768px) {
     .reception::after {
-        top: 80px; /* Mueve la notificación más abajo para que no choque con otros elementos */
-        left: 50%; /* Re-centra la notificación, ya que el diseño se apila */
+        content: "TARIFA DE PARQUEO Q40"; /* Aseguramos que el contenido esté */
+        position: absolute;
+        /* Hacemos que la posición sea relativa al contenedor de recepción */
+        top: 25px; /* MODIFICADO: Mueve la notificación ligeramente debajo del título */
+        left: 50%; /* Re-centra la notificación */
         transform: translateX(-50%); 
+        /* Aseguramos que el elemento sea visible con un alto z-index */
+        z-index: 10;
+    }
+    
+    /* Ajuste para asegurar que el contenedor de recepción sea el punto de referencia */
+    .reception {
+        position: relative;
     }
 }
 
@@ -1116,17 +1151,15 @@ body {
 
 
 
-/* Archivo: styles.css (Añadir al final) */
-
 /* NUEVA CLASE: Estilo de caligrafía tipo carta (Tangerine) */
 .titulo-caligrafia {
-    font-family: 'Great Vibes', cursive; /* Fuente similar a la imagen: elegante y fina */
-    font-size: 5.5rem; /* Tamaño grande para que se aprecie el detalle */
-    font-weight: 400; /* Trazos finos */
-    color: #c5a47c; /* Color de tu tema */
+    font-family: 'Great Vibes', cursive; 
+    font-size: 5.5rem; 
+    font-weight: 400; 
+    color: #c5a47c; 
     text-align: center;
-    letter-spacing: 0px; /* Espaciado ajustado */
-    text-transform: none; /* Asegura el estilo de carta */
+    letter-spacing: 0px; 
+    text-transform: none; 
     margin: 25px 0;
     position: relative;
     padding-bottom: 15px;
@@ -1135,6 +1168,6 @@ body {
 /* Ajuste Móvil para la nueva etiqueta */
 @media (max-width: 768px) {
     .titulo-caligrafia {
-        font-size: 3.5rem; /* Tamaño adecuado para móviles */
+        font-size: 3.5rem; 
     }
 }
