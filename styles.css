@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Cursive', sans-serif;
 }
 
 body {
@@ -182,7 +182,7 @@ body {
     margin-bottom: 15px;
     text-transform: uppercase;
     font-weight: 300;
-    font-family: 'Georgia', serif;
+    font-family: 'Great Vibes, cursive';
 }
 
 .ac-separator {
@@ -276,18 +276,57 @@ body {
     max-width: 600px;
     padding: 15px;
 }
-/* Estilos CSS para el título */
+
+
+/* Archivo: styles.css */
+
+/* Archivo: styles.css */
 .wedding-title {
-    font-family: 'Playfair Display', serif; /* Fuente elegante */
-    font-size: 3.2rem;
-    color: #5f726d; /* Color café dorado */
+    font-family: 'Great Vibes', cursive; /* APLICAMOS FUENTE CARTA/CALIGRAFÍA */
+    font-size: 4.5rem; /* Aumentamos el tamaño para que se vea más impactante */
+    font-weight: normal; /* Asegura el estilo fluido de la caligrafía */
+    color: #5f726d;
     text-align: center;
-    letter-spacing: 3px;
-    text-transform: uppercase;
+    letter-spacing: 1px; /* Espaciado más reducido para caligrafía */
+    text-transform: none; /* Quitamos las mayúsculas para un estilo de carta */
     margin: 25px 0;
     position: relative;
     padding-bottom: 15px;
 }
+
+/* Ajuste para que se vea bien en móviles */
+@media (max-width: 480px) {
+    .wedding-title {
+        font-size: 4rem; 
+    }
+}
+
+/* Archivo: styles.css */
+
+/* Archivo: styles.css */
+.wedding-title1 {
+    font-family: 'Great Vibes', cursive; /* APLICAMOS FUENTE CARTA/CALIGRAFÍA */
+    font-size: 4.5rem; /* Aumentamos el tamaño para que se vea más impactante */
+    font-weight: normal; /* Asegura el estilo fluido de la caligrafía */
+    color: #000000;
+    text-align: center;
+    letter-spacing: 1px; /* Espaciado más reducido para caligrafía */
+    text-transform: none; /* Quitamos las mayúsculas para un estilo de carta */
+    margin: 25px 0;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+/* Ajuste para que se vea bien en móviles */
+@media (max-width: 480px) {
+    .wedding-title {
+        font-size: 4rem; 
+    }
+}
+
+
+
+
 /* Agrega estos estilos al CSS */
 /* Estilos CSS */
 .section-title {
@@ -995,5 +1034,107 @@ body {
     
     .detail-column {
         padding: 10px;
+    }
+}
+
+/*
+ * SOLUCIÓN FINAL CON FLEXBOX
+ * Centra el contenido (Icono y Texto) en el medio del cuadro.
+ */ 
+
+/* 1. Contenedor principal: define la "caja" */
+.detalle-zapatos {
+    /* Usamos Flexbox para centrar el contenido (el .detail-column) */
+    display: flex;
+    /* Centra el .detail-column horizontalmente */
+    justify-content: center; 
+    /* Centra el .detail-column verticalmente (solo si tiene altura fija) */
+    align-items: center; 
+    
+    /* Aseguramos que ocupe el ancho completo de su columna */
+    width: 100%; 
+    
+    /* Añadir altura mínima si es necesario */
+    min-height: 80px; 
+}
+
+/* 2. Contenedor de la Fila (Icono + Texto) - NO NECESITA POSICIONAMIENTO ABSOLUTO */
+.detalle-zapatos .detail-column {
+    /* Mantiene Icono y Texto en línea */
+    display: flex; 
+    /* Alineación vertical para que el icono y el texto estén a la misma altura */
+    align-items: center; 
+    /* Espacio entre ellos */
+    gap: 15px; 
+    
+    /* NO AÑADIR position: absolute, top, left o transform */
+}
+
+/* 3. Contenedor de Texto */
+.detalle-zapatos .detail-content {
+    display: flex;
+    flex-direction: column;
+    /* Alinea el texto a la izquierda DENTRO de este contenedor */
+    text-align: left; 
+}
+
+
+/* Archivo: styles.css - Notificación de ticket para Recepción */
+
+.reception::after {
+    content: "TARIFA DE PARQUEO Q40"; 
+    position: absolute;
+    top: 390px; /* MODIFICADO: Aumenta este valor (por ejemplo, a 125px) para que baje y se separe del texto superior */
+    left: calc(73% + 0px);
+    transform: translateX(-50%);
+    
+    /* Estilos del texto */
+    font-size: 0.9rem;
+    font-weight: bold;
+    white-space: nowrap;
+    padding: 5px 10px;
+    border-radius: 5px;
+    
+    /* Estilos de color (transparente) */
+    background-color: rgba(255, 255, 255, 0.4); 
+    color: #8b7355; 
+    border: 1px solid rgba(139, 115, 85, 0.5); 
+    z-index: 10;
+}
+
+/* Ajuste para móviles, si la notificación se superpone en pantallas pequeñas */
+@media (max-width: 768px) {
+    .reception::after {
+        top: 80px; /* Mueve la notificación más abajo para que no choque con otros elementos */
+        left: 50%; /* Re-centra la notificación, ya que el diseño se apila */
+        transform: translateX(-50%); 
+    }
+}
+
+
+
+
+
+
+/* Archivo: styles.css (Añadir al final) */
+
+/* NUEVA CLASE: Estilo de caligrafía tipo carta (Tangerine) */
+.titulo-caligrafia {
+    font-family: 'Great Vibes', cursive; /* Fuente similar a la imagen: elegante y fina */
+    font-size: 5.5rem; /* Tamaño grande para que se aprecie el detalle */
+    font-weight: 400; /* Trazos finos */
+    color: #c5a47c; /* Color de tu tema */
+    text-align: center;
+    letter-spacing: 0px; /* Espaciado ajustado */
+    text-transform: none; /* Asegura el estilo de carta */
+    margin: 25px 0;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+/* Ajuste Móvil para la nueva etiqueta */
+@media (max-width: 768px) {
+    .titulo-caligrafia {
+        font-size: 3.5rem; /* Tamaño adecuado para móviles */
     }
 }
