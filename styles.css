@@ -1107,11 +1107,15 @@ body {
 /* Archivo: styles.css - Notificación de ticket para Recepción */
 /* NOTA: Para que esto funcione, la clase .reception DEBE tener position: relative; */
 /* Archivo: styles.css - Notificación de ticket para Recepción */
+/* VITAL: Regla general para que .reception sea el punto de referencia de posición */
+.reception {
+    position: relative; 
+}
 
 .reception::after {
     content: "TARIFA DE PARQUEO Q40"; 
     position: absolute;
-    /* AJUSTE CLAVE: Reducimos 'top' para posicionar el elemento */
+    /* Escritorio (se mantiene 230px) */
     top: 230px; 
     left: 50%; /* Centra horizontalmente el elemento */
     transform: translateX(-50%);
@@ -1129,21 +1133,18 @@ body {
     border: 1px solid rgba(139, 115, 85, 0.5); 
     z-index: 10;
 }
+
 /* Ajuste para móviles */
 @media (max-width: 768px) {
-    /* ESTO ES VITAL: Asegura que .reception sea el punto de referencia para 'position: absolute' */
-    .reception {
-        position: relative;
-    }
+    /* Ya NO es necesario repetir .reception { position: relative; } aquí */
     
     .reception::after {
-        content: "TARIFA DE PARQUEO Q40"; /* Aseguramos que el contenido esté */
+        content: "TARIFA DE PARQUEO Q40";
         position: absolute;
-        /* AJUSTE CLAVE: Valor ajustado para que caiga debajo del botón en móvil */
-        top: 200px; 
-        left: 50%; /* Re-centra la notificación, ya que el diseño se apila */
+        /* VALOR AJUSTADO PARA MÓVIL: Aumentamos ligeramente para que caiga debajo del botón */
+        top: 215px; 
+        left: 50%; 
         transform: translateX(-50%); 
-        /* Aseguramos que el elemento sea visible con un alto z-index */
         z-index: 10;
     }
 }
