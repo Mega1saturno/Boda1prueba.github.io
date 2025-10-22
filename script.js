@@ -31,20 +31,28 @@ const timerInterval = setInterval(updateTimer, 1000);
 updateTimer();
 
 // -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
 // Acción para el botón de confirmación por WhatsApp (Solo Novia)
 
 const confirmarNoviaBtn = document.getElementById('confirmarNovia');
 if (confirmarNoviaBtn) {
     confirmarNoviaBtn.addEventListener('click', () => {
+        // Mensaje que se enviará, codificado para la URL
         const message = encodeURIComponent("¡Hola Dulce! Confirmo mi asistencia a la boda. ¡Es un honor poder acompañarlos en este día tan especial!");
-        // FORMATO CORRECTO: CÓDIGO DE PAÍS (502) + NÚMERO, SIN ESPACIOS NI SIGNOS
+        
+        // Número de teléfono (Guatemala 502) + número. SIN ESPACIOS.
         const phoneNumber = '50259868962'; 
         
-        // MODIFICACIÓN CRÍTICA: Usamos el formato API para mayor compatibilidad en PC y tabletas.
-        window.open(`https://api.whatsapp.com/send/?phone=${phoneNumber}&text=${message}`, '_blank');
+        // SOLUCIÓN DEFINITIVA: Usamos el formato API que funciona en todos los navegadores (PC/iPad/Tablet).
+        // NOTA: El formato api.whatsapp.com/send/ es la URL más compatible para sistemas de escritorio.
+        window.open(`https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`, '_blank');
         
     });
 }
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
 // -----------------------------------------------------------------
 // Modal para los mapas
 document.querySelectorAll('.map-btn').forEach(button => {
