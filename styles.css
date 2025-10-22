@@ -1143,7 +1143,7 @@ body {
         content: "TARIFA DE PARQUEO Q40";
         position: absolute;
         /* VALOR CORREGIDO PARA POSICIONARLO ARRIBA DEL BOTÓN */
-        top: 180px; /* 👈 Cambia 280px por 180px */
+        top: 280px; /* 👈 Cambia 280px por 180px */
         left: 50%; 
         transform: translateX(-50%); 
         z-index: 10;
