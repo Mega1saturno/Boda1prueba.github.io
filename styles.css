@@ -286,55 +286,19 @@ body {
 
 
 /* Archivo: styles.css */
-
-/* Archivo: styles.css */
 .wedding-title {
     font-family: 'Great Vibes', cursive; /* APLICAMOS FUENTE CARTA/CALIGRAFÍA */
-    font-size: 4.5rem; /* Se mantiene el tamaño de escritorio */
+    font-size: 6rem; /* <-- AUMENTO AGRESIVO PARA EXTENDER HORIZONTALMENTE */
     font-weight: normal; /* Asegura el estilo fluido de la caligrafía */
     color: #5f726d;
     text-align: center;
-    letter-spacing: 5px; /* <-- MODIFICACIÓN CLAVE: Espaciado aumentado a 5px para estirar el texto */
+    letter-spacing: 8px; /* <-- AUMENTO AGRESIVO PARA EXTENDER HORIZONTALMENTE */
     text-transform: none; /* Quitamos las mayúsculas para un estilo de carta */
     margin: 25px 0;
     position: relative;
     padding-bottom: 15px;
+    white-space: nowrap; /* Fuerza a que el texto permanezca en una sola línea */
 }
-
-/* Ajuste para que se vea bien en móviles (ESTE BLOQUE DUPLICADO SE ELIMINA O MODIFICA EL SIGUIENTE) */
-@media (max-width: 480px) {
-    .wedding-title {
-        font-size: 3rem; /* Lo subimos para que no se vea pequeño */
-        letter-spacing: 4px; /* Agregamos espaciado */
-    }
-}
-
-
-/* Archivo: styles.css */
-
-/* Archivo: styles.css */
-.wedding-title1 {
-    font-family: 'Great Vibes', cursive; /* APLICAMOS FUENTE CARTA/CALIGRAFÍA */
-    font-size: 4.5rem; /* Aumentamos el tamaño para que se vea más impactante */
-    font-weight: normal; /* Asegura el estilo fluido de la caligrafía */
-    color: #000000;
-    text-align: center;
-    letter-spacing: 1px; /* Espaciado más reducido para caligrafía */
-    text-transform: none; /* Quitamos las mayúsculas para un estilo de carta */
-    margin: 25px 0;
-    position: relative;
-    padding-bottom: 15px;
-}
-
-/* Ajuste para que se vea bien en móviles */
-@media (max-width: 480px) {
-    .wedding-title {
-        font-size: 3rem; /* Lo subimos para que no se vea pequeño */
-        letter-spacing: 4px; /* Agregamos espaciado */
-    }
-}
-
-
 
 
 /* Agrega estos estilos al CSS */
@@ -936,8 +900,8 @@ body {
 
     /* Títulos y Nombres */
     .wedding-title {
-        font-size: 3.5rem; /* <-- AJUSTADO: Se mantiene grande en tablets, pero con espaciado */
-        letter-spacing: 4px; /* <--- AGREGADO: Espaciado para estirar el texto */
+        font-size: 4rem; /* <-- AUMENTADO: Para que se vea más extendido en tablets */
+        letter-spacing: 5px; /* <-- AUMENTADO: Más espaciado entre letras */
     }
 
     .ac-title {
@@ -1020,8 +984,9 @@ body {
     
     /* Reajuste de Títulos */
     .wedding-title {
-        font-size: 3rem; /* <--- CORREGIDO: Subido de 1.8rem a 3rem (Para que no se vea diminuto) */
-        letter-spacing: 4px; /* <--- MODIFICADO: Aumentado para estirar el texto */
+        font-size: 3.5rem; /* <-- AUMENTADO: Para que se vea más grande y extendido */
+        letter-spacing: 5px; /* <-- AUMENTADO: Más espaciado entre letras */
+        white-space: nowrap; /* Aseguramos que se mantenga horizontal */
     }
     
     .titulo-caligrafia {
