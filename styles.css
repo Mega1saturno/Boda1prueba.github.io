@@ -1016,7 +1016,7 @@ body {
     
     /* Reajuste de Títulos */
     .wedding-title {
-        font-size: 1.8rem;
+        font-size: 3rem; /* <--- CAMBIO REALIZADO AQUÍ: Aumentado de 1.8rem a 3rem */
         letter-spacing: 2px;
     }
     
