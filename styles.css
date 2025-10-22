@@ -186,6 +186,7 @@ body {
     color: #c5a47c;
     font-size: 2.8rem;
     letter-spacing: 3px;
+    margin-bottom: 15px;
     text-transform: uppercase;
     font-weight: 300;
     font-family: 'Great Vibes', cursive;
@@ -285,8 +286,6 @@ body {
 
 
 /* Archivo: styles.css */
-
-/* Archivo: styles.css */
 .wedding-title {
     font-family: 'Great Vibes', cursive; /* APLICAMOS FUENTE CARTA/CALIGRAFÍA */
     font-size: 4.5rem; /* Aumentamos el tamaño para que se vea más impactante */
@@ -300,37 +299,7 @@ body {
     padding-bottom: 15px;
 }
 
-/* Ajuste para que se vea bien en móviles */
-@media (max-width: 480px) {
-    .wedding-title {
-        font-size: 4rem; 
-    }
-}
-
-/* Archivo: styles.css */
-
-/* Archivo: styles.css */
-.wedding-title1 {
-    font-family: 'Great Vibes', cursive; /* APLICAMOS FUENTE CARTA/CALIGRAFÍA */
-    font-size: 4.5rem; /* Aumentamos el tamaño para que se vea más impactante */
-    font-weight: normal; /* Asegura el estilo fluido de la caligrafía */
-    color: #000000;
-    text-align: center;
-    letter-spacing: 1px; /* Espaciado más reducido para caligrafía */
-    text-transform: none; /* Quitamos las mayúsculas para un estilo de carta */
-    margin: 25px 0;
-    position: relative;
-    padding-bottom: 15px;
-}
-
-/* Ajuste para que se vea bien en móviles */
-@media (max-width: 480px) {
-    .wedding-title {
-        font-size: 4rem; 
-    }
-}
-
-
+/* Se eliminaron las reglas duplicadas para .wedding-title y .wedding-title1 que causaban conflicto en móvil. */
 
 
 /* Agrega estos estilos al CSS */
@@ -932,7 +901,7 @@ body {
 
     /* Títulos y Nombres */
     .wedding-title {
-        font-size: 2.5rem; /* Título más pequeño */
+        font-size: 3.5rem; /* TÍTULO CORREGIDO: Igualado a 3.5rem para verse GRANDE */
     }
 
     .ac-title {
@@ -1014,9 +983,8 @@ body {
 @media (max-width: 480px) {
     
     /* Reajuste de Títulos */
-    /* *** CAMBIO DE CORRECCIÓN APLICADO AQUÍ *** */
     .wedding-title {
-        font-size: 4.5rem !important; /* Forzado a tamaño grande con !important */
+        font-size: 3rem; /* TÍTULO CORREGIDO: Estaba en 1.8rem, ahora es 3rem (igual que Erick & Dulce) */
         letter-spacing: 2px;
     }
     
