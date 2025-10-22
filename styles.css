@@ -1001,8 +1001,8 @@ body {
     .reception::after {
         content: "TARIFA DE PARQUEO Q40";
         position: absolute;
-        /* CORREGIDO: 180px sube la etiqueta para que quede encima del botón en modo vertical */
-        top: 180px; 
+        /* CORREGIDO: Lo subimos a 210px para empujarlo debajo de la dirección en tablets verticales */
+        top: 210px; 
         left: 50%;
         transform: translateX(-50%);
         z-index: 10;
@@ -1128,8 +1128,8 @@ body {
 .reception::after {
     content: "TARIFA DE PARQUEO Q40"; 
     position: absolute;
-    /* Escritorio (se mantiene 230px) */
-    top: 230px; 
+    /* ESCRITORIO / TABLET HORIZONTAL: AUMENTADO a 250px */
+    top: 250px; 
     left: 50%; /* Centra horizontalmente el elemento */
     transform: translateX(-50%);
     
@@ -1166,91 +1166,5 @@ body {
 @media (max-width: 768px) {
     .titulo-caligrafia {
         font-size: 3.5rem; 
-    }
-}
-
-
-
-
-
-
-/* ========================================================================= */
-/* MEJORAS RESPONSIVE (TABLET - Dispositivos hasta 768px) */
-/* ========================================================================= */
-@media (max-width: 768px) {
-    /* 1. FIJAR ITINERARIO (CEREMONIA Y RECEPCIÓN) */
-    .event-details {
-        /* Fuerza a que los dos eventos se apilen verticalmente en móvil */
-        flex-direction: column;
-        gap: 40px; /* Aumenta el espacio entre ceremonia y recepción */
-    }
-
-    /* 2. OCULTAR LÍNEA DIVISORIA EN MÓVIL */
-    .line {
-        display: none;
-    }
-
-    /* 3. FIJAR DETALLES (COMO MESA DE REGALOS) */
-    .details-grid {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    /* 4. ASEGURAR QUE LAS CUENTAS BANCARIAS Y BOTONES DE WHATSAPP SE APILEN */
-    .accounts, .parents, .botones-whatsapp {
-        flex-direction: column;
-        gap: 15px;
-    }
-}
-
-/* ========================================================================= */
-/* MEJORAS RESPONSIVE (MÓVIL - Dispositivos hasta 600px) */
-/* ========================================================================= */
-@media (max-width: 600px) {
-    /* AJUSTE GENERAL DE ESPACIADO */
-    body {
-        padding: 10px; /* Reduce el padding global */
-    }
-    .card {
-        padding: 20px 15px; /* Reduce el padding interno de las tarjetas */
-    }
-    
-    /* 1. AJUSTE DE IMAGEN PRINCIPAL (HOJAS DECORATIVAS CON position: absolute) */
-    /* Estas decoraciones son las que más suelen 'moverse' o salirse. */
-    .main-image-container {
-        width: 200px; /* Reduce el tamaño del óvalo de la imagen */
-        height: 300px;
-    }
-
-    .leaf-top {
-        width: 100px; /* Reduce el tamaño de la hoja superior */
-        top: -10px;
-        left: 65%; /* Mueve a la derecha para que no se salga */
-    }
-
-    .leaf-bottom {
-        width: 80px; /* Reduce el tamaño de la hoja inferior */
-        bottom: 5px;
-        right: 65%; /* Mueve a la izquierda para que no se salga */
-    }
-
-    /* 2. AJUSTE DE TAMAÑO DE FUENTE PARA TÍTULOS GRANDES */
-    .wedding-title, .wedding-title1 {
-        font-size: 3rem; 
-    }
-}
-
-/* ========================================================================= */
-/* MEJORAS RESPONSIVE (MÓVIL MÁS PEQUEÑO - Dispositivos hasta 480px) */
-/* ========================================================================= */
-@media (max-width: 480px) {
-    /* TAMAÑO DE LA FUENTE EN LA CUENTA REGRESIVA */
-    .time-box span:first-child {
-        font-size: 1.5em; 
-    }
-
-    /* TAMAÑO DE LA FUENTE EN EL TEXTO PRINCIPAL */
-    .ac-message {
-        font-size: 1.1rem;
     }
 }
