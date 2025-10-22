@@ -1137,3 +1137,12 @@ body {
         font-size: 3.5rem; 
     }
 }
+
+
+/* Ajuste exclusivo para pantallas de PC */
+@media (min-width: 1024px) {
+    .wedding-title {
+        font-size: 4.5rem; /* Tamaño más pequeño que el original de 6rem */
+        letter-spacing: 6px; /* Ajuste proporcional al nuevo tamaño */
+    }
+}
