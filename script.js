@@ -39,7 +39,10 @@ if (confirmarNoviaBtn) {
         const message = encodeURIComponent("¡Hola Dulce! Confirmo mi asistencia a la boda. ¡Es un honor poder acompañarlos en este día tan especial!");
         // FORMATO CORRECTO: CÓDIGO DE PAÍS (502) + NÚMERO, SIN ESPACIOS NI SIGNOS
         const phoneNumber = '50259868962'; 
-        window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+        
+        // MODIFICACIÓN CRÍTICA: Usamos el formato API para mayor compatibilidad en PC y tabletas.
+        window.open(`https://api.whatsapp.com/send/?phone=${phoneNumber}&text=${message}`, '_blank');
+        
     });
 }
 // -----------------------------------------------------------------

@@ -1129,7 +1129,7 @@ body {
     content: "TARIFA DE PARQUEO Q40"; 
     position: absolute;
     /* ESCRITORIO / TABLET HORIZONTAL: AUMENTADO a 280px (antes 250px) */
-    top: 230px; 
+    top: 240px; 
     left: 50%; /* Centra horizontalmente el elemento */
     transform: translateX(-50%);
     
