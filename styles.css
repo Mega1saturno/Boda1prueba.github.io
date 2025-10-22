@@ -1001,8 +1001,8 @@ body {
     .reception::after {
         content: "TARIFA DE PARQUEO Q40";
         position: absolute;
-        /* CORREGIDO: Lo subimos a 210px para empujarlo debajo de la dirección en tablets verticales */
-        top: 210px; 
+        /* CORREGIDO: Lo subimos a 250px (antes 210px) para empujarlo debajo de la dirección en tablets verticales */
+        top: 250px; 
         left: 50%;
         transform: translateX(-50%);
         z-index: 10;
@@ -1128,8 +1128,8 @@ body {
 .reception::after {
     content: "TARIFA DE PARQUEO Q40"; 
     position: absolute;
-    /* ESCRITORIO / TABLET HORIZONTAL: AUMENTADO a 250px */
-    top: 250px; 
+    /* ESCRITORIO / TABLET HORIZONTAL: AUMENTADO a 280px (antes 250px) */
+    top: 280px; 
     left: 50%; /* Centra horizontalmente el elemento */
     transform: translateX(-50%);
     
