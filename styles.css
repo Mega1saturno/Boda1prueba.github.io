@@ -994,6 +994,21 @@ body {
     .carousel-item img {
         max-height: 300px; /* Limita la altura de las imágenes en móviles */
     }
+
+    /* *************************************************************** */
+    /* ** CORRECCIÓN TARIFA DE PARQUEO: Aseguramos el 'top' correcto ** */
+    /* *************************************************************** */
+    .reception::after {
+        content: "TARIFA DE PARQUEO Q40";
+        position: absolute;
+        /* CORREGIDO: 180px sube la etiqueta para que quede encima del botón en modo vertical */
+        top: 180px; 
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        /* IMPORTANTE: No se copian los estilos de fondo/borde, ya están en la regla general. */
+    }
+    /* *************************************************************** */
 }
 
 /* Media Query para Móviles Pequeños (Hasta 480px) */
@@ -1105,8 +1120,6 @@ body {
 
 
 /* Archivo: styles.css - Notificación de ticket para Recepción */
-/* NOTA: Para que esto funcione, la clase .reception DEBE tener position: relative; */
-/* Archivo: styles.css - Notificación de ticket para Recepción */
 /* VITAL: Regla general para que .reception sea el punto de referencia de posición */
 .reception {
     position: relative; 
@@ -1132,23 +1145,6 @@ body {
     color: #8b7355; 
     border: 1px solid rgba(139, 115, 85, 0.5); 
     z-index: 10;
-}
-
-/* Ajuste para móviles */
-/* Ajuste para móviles */
-/* AJUSTE CORREGIDO para móviles y tablets */
-@media (max-width: 768px) {
-    /* Ya NO es necesario repetir .reception { position: relative; } aquí */
-    
-    .reception::after {
-        content: "TARIFA DE PARQUEO Q40";
-        position: absolute;
-        /* VALOR CORREGIDO: Lo subimos a 180px para que quede en el centro, encima del botón */
-        top: 180px; /* 👈 ¡ESTE ES EL CAMBIO CLAVE! */
-        left: 50%; 
-        transform: translateX(-50%); 
-        z-index: 10;
-    }
 }
 
 
