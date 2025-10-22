@@ -286,11 +286,38 @@ body {
 
 
 /* Archivo: styles.css */
+
+/* Archivo: styles.css */
 .wedding-title {
+    font-family: 'Great Vibes', cursive; /* APLICAMOS FUENTE CARTA/CALIGRAFÍA */
+    font-size: 4.5rem; /* Se mantiene el tamaño de escritorio */
+    font-weight: normal; /* Asegura el estilo fluido de la caligrafía */
+    color: #5f726d;
+    text-align: center;
+    letter-spacing: 5px; /* <-- MODIFICACIÓN CLAVE: Espaciado aumentado a 5px para estirar el texto */
+    text-transform: none; /* Quitamos las mayúsculas para un estilo de carta */
+    margin: 25px 0;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+/* Ajuste para que se vea bien en móviles (ESTE BLOQUE DUPLICADO SE ELIMINA O MODIFICA EL SIGUIENTE) */
+@media (max-width: 480px) {
+    .wedding-title {
+        font-size: 3rem; /* Lo subimos para que no se vea pequeño */
+        letter-spacing: 4px; /* Agregamos espaciado */
+    }
+}
+
+
+/* Archivo: styles.css */
+
+/* Archivo: styles.css */
+.wedding-title1 {
     font-family: 'Great Vibes', cursive; /* APLICAMOS FUENTE CARTA/CALIGRAFÍA */
     font-size: 4.5rem; /* Aumentamos el tamaño para que se vea más impactante */
     font-weight: normal; /* Asegura el estilo fluido de la caligrafía */
-    color: #5f726d;
+    color: #000000;
     text-align: center;
     letter-spacing: 1px; /* Espaciado más reducido para caligrafía */
     text-transform: none; /* Quitamos las mayúsculas para un estilo de carta */
@@ -299,7 +326,15 @@ body {
     padding-bottom: 15px;
 }
 
-/* Se eliminaron las reglas duplicadas para .wedding-title y .wedding-title1 que causaban conflicto en móvil. */
+/* Ajuste para que se vea bien en móviles */
+@media (max-width: 480px) {
+    .wedding-title {
+        font-size: 3rem; /* Lo subimos para que no se vea pequeño */
+        letter-spacing: 4px; /* Agregamos espaciado */
+    }
+}
+
+
 
 
 /* Agrega estos estilos al CSS */
@@ -901,7 +936,8 @@ body {
 
     /* Títulos y Nombres */
     .wedding-title {
-        font-size: 3.5rem; /* TÍTULO CORREGIDO: Igualado a 3.5rem para verse GRANDE */
+        font-size: 3.5rem; /* <-- AJUSTADO: Se mantiene grande en tablets, pero con espaciado */
+        letter-spacing: 4px; /* <--- AGREGADO: Espaciado para estirar el texto */
     }
 
     .ac-title {
@@ -984,8 +1020,8 @@ body {
     
     /* Reajuste de Títulos */
     .wedding-title {
-        font-size: 3rem; /* TÍTULO CORREGIDO: Estaba en 1.8rem, ahora es 3rem (igual que Erick & Dulce) */
-        letter-spacing: 2px;
+        font-size: 3rem; /* <--- CORREGIDO: Subido de 1.8rem a 3rem (Para que no se vea diminuto) */
+        letter-spacing: 4px; /* <--- MODIFICADO: Aumentado para estirar el texto */
     }
     
     .titulo-caligrafia {
