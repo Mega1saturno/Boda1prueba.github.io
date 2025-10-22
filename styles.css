@@ -1135,20 +1135,20 @@ body {
 }
 
 /* Ajuste para móviles */
+/* Ajuste para móviles */
 @media (max-width: 768px) {
     /* Ya NO es necesario repetir .reception { position: relative; } aquí */
     
     .reception::after {
         content: "TARIFA DE PARQUEO Q40";
         position: absolute;
-        /* VALOR AJUSTADO PARA MÓVIL: Aumentamos ligeramente para que caiga debajo del botón */
-        top: 280px; 
+        /* VALOR CORREGIDO PARA POSICIONARLO ARRIBA DEL BOTÓN */
+        top: 180px; /* 👈 Cambia 280px por 180px */
         left: 50%; 
         transform: translateX(-50%); 
         z-index: 10;
     }
 }
-
 
 
 /* NUEVA CLASE: Estilo de caligrafía tipo carta (Tangerine) */
